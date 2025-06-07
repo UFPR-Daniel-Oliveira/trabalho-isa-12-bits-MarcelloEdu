@@ -59,105 +59,38 @@
     <a name="circuit" val="Main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1030,220)" name="Splitter">
-      <a name="bit1" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="0"/>
-      <a name="bit17" val="0"/>
-      <a name="bit18" val="0"/>
-      <a name="bit19" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit20" val="0"/>
-      <a name="bit21" val="0"/>
-      <a name="bit22" val="0"/>
-      <a name="bit23" val="0"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit3" val="0"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="incoming" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1410,270)" name="Constant"/>
     <comp lib="0" loc="(160,320)" name="Clock"/>
-    <comp lib="2" loc="(760,270)" name="Multiplexer">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="4" loc="(1030,510)" name="ROM">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="UC"/>
-    </comp>
-    <comp lib="4" loc="(1470,210)" name="RAM">
-      <a name="addrWidth" val="24"/>
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="dataWidth" val="32"/>
-      <a name="label" val="M_DADOS"/>
-    </comp>
-    <comp lib="4" loc="(240,250)" name="Register">
+    <comp lib="4" loc="(250,240)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="PC"/>
+      <a name="width" val="12"/>
     </comp>
-    <comp lib="4" loc="(300,500)" name="ROM">
-      <a name="addrWidth" val="24"/>
+    <comp lib="4" loc="(360,270)" name="ROM">
+      <a name="addrWidth" val="12"/>
       <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 24 24
-443 8443 10443 18443 20443 28443 30443 38443
-808800 908800 a08800 b08800 c08800 d08800 e08800 f08800
-10e0 2010e0 4010e0 6010e0 8010e0 840000 608800
+      <a name="contents">addr/data: 12 12
+0
 </a>
-      <a name="dataWidth" val="24"/>
+      <a name="dataWidth" val="12"/>
+      <a name="label" val="MINS"/>
     </comp>
-    <comp loc="(1030,250)" name="ULA"/>
-    <comp loc="(630,250)" name="B_REG"/>
-    <wire from="(1030,220)" to="(1030,250)"/>
-    <wire from="(1050,200)" to="(1470,200)"/>
-    <wire from="(1260,260)" to="(1260,500)"/>
-    <wire from="(1260,260)" to="(1470,260)"/>
-    <wire from="(1260,500)" to="(1280,500)"/>
-    <wire from="(1270,190)" to="(1270,300)"/>
-    <wire from="(1270,300)" to="(1470,300)"/>
-    <wire from="(1270,570)" to="(1280,570)"/>
-    <wire from="(1280,130)" to="(1280,290)"/>
-    <wire from="(1280,290)" to="(1470,290)"/>
-    <wire from="(1280,500)" to="(1280,570)"/>
-    <wire from="(1410,270)" to="(1470,270)"/>
-    <wire from="(1470,200)" to="(1470,220)"/>
-    <wire from="(1470,280)" to="(1470,290)"/>
+    <comp lib="4" loc="(370,640)" name="ROM">
+      <a name="addrWidth" val="12"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 12 12
+0
+</a>
+      <a name="dataWidth" val="12"/>
+    </comp>
+    <comp lib="4" loc="(920,550)" name="RAM">
+      <a name="addrWidth" val="12"/>
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="dataWidth" val="12"/>
+      <a name="label" val="MDATA"/>
+    </comp>
+    <comp loc="(1230,270)" name="ULA"/>
+    <comp loc="(900,260)" name="B_REG"/>
     <wire from="(160,320)" to="(190,320)"/>
-    <wire from="(190,220)" to="(190,320)"/>
-    <wire from="(190,220)" to="(360,220)"/>
-    <wire from="(190,320)" to="(240,320)"/>
-    <wire from="(360,130)" to="(1280,130)"/>
-    <wire from="(360,130)" to="(360,220)"/>
-    <wire from="(360,220)" to="(360,270)"/>
-    <wire from="(360,270)" to="(410,270)"/>
-    <wire from="(630,250)" to="(720,250)"/>
-    <wire from="(630,270)" to="(660,270)"/>
-    <wire from="(660,190)" to="(1270,190)"/>
-    <wire from="(660,190)" to="(660,270)"/>
-    <wire from="(660,270)" to="(700,270)"/>
-    <wire from="(700,260)" to="(700,270)"/>
-    <wire from="(700,260)" to="(730,260)"/>
-    <wire from="(720,240)" to="(720,250)"/>
-    <wire from="(720,240)" to="(770,240)"/>
-    <wire from="(760,270)" to="(810,270)"/>
-    <wire from="(770,240)" to="(770,250)"/>
-    <wire from="(770,250)" to="(810,250)"/>
   </circuit>
   <circuit name="ULA">
     <a name="appearance" val="logisim_evolution"/>
