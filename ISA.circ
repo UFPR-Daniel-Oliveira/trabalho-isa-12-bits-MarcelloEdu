@@ -160,17 +160,21 @@
     <comp lib="0" loc="(700,910)" name="Tunnel">
       <a name="label" val="RegWrite"/>
     </comp>
-    <comp lib="0" loc="(740,280)" name="Tunnel">
+    <comp lib="0" loc="(710,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RegWrite"/>
+    </comp>
+    <comp lib="0" loc="(710,370)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RD"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(740,310)" name="Tunnel">
+    <comp lib="0" loc="(710,400)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RS1"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(740,340)" name="Tunnel">
+    <comp lib="0" loc="(710,430)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RS2"/>
       <a name="width" val="2"/>
@@ -315,13 +319,17 @@
     <wire from="(690,600)" to="(690,730)"/>
     <wire from="(690,730)" to="(700,730)"/>
     <wire from="(700,160)" to="(700,180)"/>
-    <wire from="(740,280)" to="(760,280)"/>
-    <wire from="(740,310)" to="(750,310)"/>
-    <wire from="(740,340)" to="(750,340)"/>
-    <wire from="(750,300)" to="(750,310)"/>
-    <wire from="(750,300)" to="(760,300)"/>
-    <wire from="(750,320)" to="(750,340)"/>
-    <wire from="(750,320)" to="(760,320)"/>
+    <wire from="(710,260)" to="(710,340)"/>
+    <wire from="(710,260)" to="(760,260)"/>
+    <wire from="(710,370)" to="(720,370)"/>
+    <wire from="(710,400)" to="(730,400)"/>
+    <wire from="(710,430)" to="(740,430)"/>
+    <wire from="(720,300)" to="(720,370)"/>
+    <wire from="(720,300)" to="(760,300)"/>
+    <wire from="(730,320)" to="(730,400)"/>
+    <wire from="(730,320)" to="(760,320)"/>
+    <wire from="(740,340)" to="(740,430)"/>
+    <wire from="(740,340)" to="(760,340)"/>
     <wire from="(760,210)" to="(1170,210)"/>
     <wire from="(760,210)" to="(760,240)"/>
     <wire from="(820,380)" to="(1000,380)"/>
